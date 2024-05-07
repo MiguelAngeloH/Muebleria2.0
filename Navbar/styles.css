@@ -1,0 +1,101 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+
+
+/* Variables en Css */
+:root{
+    --header-height:3.5rem;
+}
+/* colores */
+/* color modo HSL  */
+--white-color:hsl(0,0%,100%);
+--black-color:hsl(0,0%,0%);
+
+/*Font y tipografia  */
+/* *.5rem = 8px | 1rem = 16px ... */
+--body-font:"Monserrat Alternates",sans-serifs;
+--h1-font-size:1.5rem;
+--normal-font-size:.938rem;
+
+
+
+/*=============== font weigth ===============*/
+--font-regular:400;
+--font-medium:500;
+
+ 
+/* z index */
+--z-tooltip:10;
+--z-fixed:100;
+
+
+
+/* responsive typography */
+@media screen and (min-width: 1150px) {
+    :root{
+        --norma-font-size:1rem;
+    }
+}
+
+
+
+/* base */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth scroll;
+    /* scroll-behavior: smooth scroll; */
+}
+
+
+/* clases reusables en CSS */
+.contaner{
+    max-width:1120px ;
+    max-height: 1.5rem;
+}
+
+
+
+
+<!-- ==================header==================== -->
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--black-color);
+    z-index:var(--z-fixed);
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    height: var(--header-height);
+    align-items: center;
+}
+.nav__logo {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+.nav__close,
+.nav__toggle {
+  display: flex;
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
